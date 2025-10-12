@@ -1,3 +1,40 @@
+# Nebula Commerce Storefront
+
+The repository now ships with a fully responsive multi-page ecommerce demo built with HTML, CSS, and vanilla JavaScript.
+Navigate between the home experience, catalog, product detail, cart, account, support, and journal pages to explore
+end-to-end storefront flows powered by lightweight client-side data.
+
+## ⚙️ Getting started
+
+```bash
+python -m http.server 8000
+```
+
+Then open <http://localhost:8000/public/index.html> in your browser.
+
+## 📁 Front-end structure
+
+```
+public/
+  assets/
+    css/
+      main.css         # global foundations, layout, typography
+      components.css   # component-specific styling for catalog, cart, account, etc.
+    js/
+      app.js           # global navigation, language picker, newsletter, cart indicator
+      home.js          # homepage merchandising
+      catalog.js       # filtering, sorting, view switching
+      product.js       # product detail experience and related products
+      cart.js          # cart management, promo codes, totals
+      support.js       # concierge and tracking forms
+      account.js       # loyalty, wishlist, saved addresses
+      journal.js       # demo messaging for placeholder links
+      data/products.js # curated product catalogue
+      modules/         # shared helpers for storage, product templates, cart actions
+```
+
+The legacy Python-based YouTube downloader is still available below.
+
 # Simple YouTube Downloader
 
 A user-friendly YouTube downloader with a graphical interface. Just paste a URL and download!

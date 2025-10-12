@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Access your Nebula Commerce account, wishlist, loyalty insights, and saved addresses." />
+    <title>Nebula Commerce · Account</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/components.css" />
+  </head>
+  <body>
+    <div class="page">
+      <a class="skip-link" href="#main">Skip to content</a>
+      <header class="site-header" aria-label="Global">
+        <div class="utility-bar" role="navigation" aria-label="Site utilities">
+          <div class="container utility-bar__inner">
+            <p class="utility-bar__promo">Complimentary global shipping over $150 · Extended returns all season</p>
+            <div class="utility-bar__actions">
+              <a class="utility-bar__link" href="./support.html#support">Support</a>
+              <a class="utility-bar__link" href="./support.html#order-tracking">Track order</a>
+              <div class="utility-language">
+                <button
+                  class="utility-bar__link utility-language__toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="language-menu"
+                  data-language-toggle
+                >
+                  EN / USD
+                </button>
+                <div id="language-menu" class="utility-language__menu" hidden data-language-menu>
+                  <button type="button" data-locale="en-us">English · USD</button>
+                  <button type="button" data-locale="fr-fr">Français · EUR</button>
+                  <button type="button" data-locale="ja-jp">日本語 · JPY</button>
+                </div>
+                <p class="language-feedback" role="status" aria-live="polite" data-language-feedback hidden></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="header-primary">
+            <button
+              class="header-primary__toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="primary-navigation"
+              data-nav-toggle
+            >
+              <span class="visually-hidden">Toggle navigation</span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <a class="logo" href="./index.html" aria-label="Nebula Commerce home">
+              Nebula <span>Commerce</span>
+            </a>
+            <form class="header-search" role="search" aria-label="Site search" data-search-form>
+              <label class="visually-hidden" for="account-search">Search products</label>
+              <input id="account-search" name="search" type="search" placeholder="Search for gear, creators, or collections" />
+              <button type="submit">Search</button>
+            </form>
+            <div class="header-icons" aria-label="Account shortcuts">
+              <a class="icon-button" href="#wishlist" aria-label="Open wishlist">
+                <span class="icon-heart" aria-hidden="true"></span>
+              </a>
+              <a class="icon-button" href="./account.html" aria-label="Open account">
+                <span class="icon-user" aria-hidden="true"></span>
+              </a>
+              <a class="icon-button" href="./cart.html" aria-label="View cart" data-cart-link>
+                <span class="icon-bag" aria-hidden="true"></span>
+                <span class="icon-badge" data-cart-count>0</span>
+              </a>
+            </div>
+            <p class="cart-feedback" role="status" aria-live="polite" data-cart-feedback hidden></p>
+          </div>
+        </div>
+
+        <nav id="primary-navigation" class="primary-nav" aria-label="Primary" data-nav>
+          <div class="container">
+            <ul class="primary-nav__list">
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?collection=new">New In</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?category=women">Women</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?category=men">Men</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?category=tech">Tech</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?collection=wellness">Wellness</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./journal.html">Journal</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./support.html">Support</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main id="main" class="site-main">
+        <header class="page-header">
+          <div class="container page-header__inner">
+            <div>
+              <p class="tag">Account</p>
+              <h1>Welcome back, Orion</h1>
+              <p>Manage loyalty progress, wishlist, saved addresses, and communication preferences.</p>
+            </div>
+            <div class="page-header__actions">
+              <button class="button" type="button" data-signout>Sign out</button>
+            </div>
+          </div>
+        </header>
+
+        <section class="section account-grid">
+          <div class="container account-grid__inner">
+            <article class="account-card" id="loyalty">
+              <h2>Loyalty status</h2>
+              <p>You are <strong>Aurora tier</strong>. Earn 3x points during member events.</p>
+              <dl class="loyalty-progress">
+                <div>
+                  <dt>Points balance</dt>
+                  <dd data-loyalty-points>12,480</dd>
+                </div>
+                <div>
+                  <dt>Progress to next tier</dt>
+                  <dd>
+                    <progress value="62" max="100">62%</progress>
+                  </dd>
+                </div>
+              </dl>
+              <button class="button button--ghost" type="button" data-redeem>Redeem rewards</button>
+              <p class="form-feedback" role="status" aria-live="polite" data-loyalty-feedback hidden></p>
+            </article>
+
+            <article class="account-card" id="wishlist">
+              <h2>Wishlist</h2>
+              <ul class="wishlist" data-wishlist>
+                <!-- Populated by JS -->
+              </ul>
+            </article>
+
+            <article class="account-card" id="addresses">
+              <h2>Addresses</h2>
+              <form class="address-form" data-address-form>
+                <div class="field">
+                  <label for="address-name">Full name</label>
+                  <input id="address-name" name="name" type="text" required />
+                </div>
+                <div class="field">
+                  <label for="address-line">Address</label>
+                  <input id="address-line" name="address" type="text" required />
+                </div>
+                <div class="field field--split">
+                  <div>
+                    <label for="address-city">City</label>
+                    <input id="address-city" name="city" type="text" required />
+                  </div>
+                  <div>
+                    <label for="address-postal">Postal code</label>
+                    <input id="address-postal" name="postal" type="text" required />
+                  </div>
+                </div>
+                <button class="button" type="submit">Save address</button>
+                <p class="form-feedback" role="status" aria-live="polite" data-address-feedback hidden></p>
+              </form>
+              <ul class="address-list" data-address-list>
+                <!-- Populated by JS -->
+              </ul>
+            </article>
+
+            <article class="account-card" id="preferences">
+              <h2>Communication preferences</h2>
+              <form class="preferences-form" data-preferences-form>
+                <label><input type="checkbox" name="email" checked /> Product updates</label>
+                <label><input type="checkbox" name="sms" /> SMS order alerts</label>
+                <label><input type="checkbox" name="community" checked /> Community events</label>
+                <button class="button" type="submit">Update preferences</button>
+                <p class="form-feedback" role="status" aria-live="polite" data-preferences-feedback hidden></p>
+              </form>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" aria-label="Footer">
+        <div class="container footer__grid">
+          <div>
+            <a class="logo logo--footer" href="./index.html">Nebula <span>Commerce</span></a>
+            <p class="footer__tagline">Modern commerce infrastructure for creative retailers.</p>
+            <ul class="footer__social" aria-label="Social">
+              <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+              <li><a href="https://www.tiktok.com" target="_blank" rel="noreferrer">TikTok</a></li>
+              <li><a href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Platform</h3>
+            <ul>
+              <li><a href="./catalog.html">Marketplace</a></li>
+              <li><a href="./journal.html">Journal</a></li>
+              <li><a href="./support.html#integrations">Integrations</a></li>
+              <li><a href="./support.html#pricing">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li><a href="./journal.html#about">About Nebula</a></li>
+              <li><a href="./support.html#careers">Careers</a></li>
+              <li><a href="./support.html#press">Press</a></li>
+              <li><a href="./support.html#partners">Partners</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Help</h3>
+            <ul>
+              <li><a href="./support.html#support">Customer support</a></li>
+              <li><a href="./support.html#order-tracking">Track order</a></li>
+              <li><a href="./support.html#returns">Returns &amp; exchanges</a></li>
+              <li><a href="./support.html#accessibility">Accessibility</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container footer__legal">
+          <p>© <span data-year></span> Nebula Commerce. All rights reserved.</p>
+          <div class="footer__policies">
+            <a href="./support.html#privacy">Privacy</a>
+            <a href="./support.html#terms">Terms</a>
+            <a href="./support.html#cookies">Cookies</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="./assets/js/app.js"></script>
+    <script type="module" src="./assets/js/account.js"></script>
+  </body>
+</html>

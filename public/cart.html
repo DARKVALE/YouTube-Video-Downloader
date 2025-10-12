@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="View the items added to your Nebula Commerce cart, manage quantities, and start checkout." />
+    <title>Nebula Commerce · Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/components.css" />
+  </head>
+  <body>
+    <div class="page">
+      <a class="skip-link" href="#main">Skip to content</a>
+      <header class="site-header" aria-label="Global">
+        <div class="utility-bar" role="navigation" aria-label="Site utilities">
+          <div class="container utility-bar__inner">
+            <p class="utility-bar__promo">Complimentary global shipping over $150 · Extended returns all season</p>
+            <div class="utility-bar__actions">
+              <a class="utility-bar__link" href="./support.html#support">Support</a>
+              <a class="utility-bar__link" href="./support.html#order-tracking">Track order</a>
+              <div class="utility-language">
+                <button
+                  class="utility-bar__link utility-language__toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="language-menu"
+                  data-language-toggle
+                >
+                  EN / USD
+                </button>
+                <div id="language-menu" class="utility-language__menu" hidden data-language-menu>
+                  <button type="button" data-locale="en-us">English · USD</button>
+                  <button type="button" data-locale="fr-fr">Français · EUR</button>
+                  <button type="button" data-locale="ja-jp">日本語 · JPY</button>
+                </div>
+                <p class="language-feedback" role="status" aria-live="polite" data-language-feedback hidden></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="header-primary">
+            <button
+              class="header-primary__toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="primary-navigation"
+              data-nav-toggle
+            >
+              <span class="visually-hidden">Toggle navigation</span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <a class="logo" href="./index.html" aria-label="Nebula Commerce home">
+              Nebula <span>Commerce</span>
+            </a>
+            <form class="header-search" role="search" aria-label="Site search" data-search-form>
+              <label class="visually-hidden" for="cart-search">Search products</label>
+              <input id="cart-search" name="search" type="search" placeholder="Search for gear, creators, or collections" />
+              <button type="submit">Search</button>
+            </form>
+            <div class="header-icons" aria-label="Account shortcuts">
+              <a class="icon-button" href="./account.html#wishlist" aria-label="Open wishlist">
+                <span class="icon-heart" aria-hidden="true"></span>
+              </a>
+              <a class="icon-button" href="./account.html" aria-label="Open account">
+                <span class="icon-user" aria-hidden="true"></span>
+              </a>
+              <a class="icon-button" href="./cart.html" aria-label="View cart" data-cart-link>
+                <span class="icon-bag" aria-hidden="true"></span>
+                <span class="icon-badge" data-cart-count>0</span>
+              </a>
+            </div>
+            <p class="cart-feedback" role="status" aria-live="polite" data-cart-feedback hidden></p>
+          </div>
+        </div>
+
+        <nav id="primary-navigation" class="primary-nav" aria-label="Primary" data-nav>
+          <div class="container">
+            <ul class="primary-nav__list">
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?collection=new">New In</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?category=women">Women</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?category=men">Men</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?category=tech">Tech</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?collection=wellness">Wellness</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./journal.html">Journal</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./support.html">Support</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main id="main" class="site-main">
+        <header class="page-header">
+          <div class="container page-header__inner">
+            <div>
+              <p class="tag">Cart</p>
+              <h1>Review your selections</h1>
+              <p>Adjust quantities, apply offers, and continue to secure checkout.</p>
+            </div>
+            <div class="page-header__actions">
+              <a class="button" href="./catalog.html">Continue shopping</a>
+            </div>
+          </div>
+        </header>
+
+        <section class="section">
+          <div class="container cart-layout">
+            <div class="cart-items" data-cart-items>
+              <!-- Populated by JS -->
+            </div>
+            <aside class="order-summary">
+              <h2>Order summary</h2>
+              <dl>
+                <div>
+                  <dt>Subtotal</dt>
+                  <dd data-cart-subtotal>$0.00</dd>
+                </div>
+                <div>
+                  <dt>Estimated shipping</dt>
+                  <dd data-cart-shipping>$0.00</dd>
+                </div>
+                <div>
+                  <dt>Taxes</dt>
+                  <dd data-cart-tax>$0.00</dd>
+                </div>
+                <div class="order-summary__total">
+                  <dt>Total</dt>
+                  <dd data-cart-total>$0.00</dd>
+                </div>
+              </dl>
+              <form class="order-summary__promo" data-promo-form>
+                <label for="promo">Promo code</label>
+                <div class="order-summary__promo-input">
+                  <input id="promo" name="promo" type="text" placeholder="Enter code" />
+                  <button type="submit">Apply</button>
+                </div>
+                <p class="form-feedback" role="status" aria-live="polite" data-promo-feedback hidden></p>
+              </form>
+              <button class="button button--full" type="button" data-checkout>Secure checkout</button>
+              <p class="checkout-feedback" role="status" aria-live="polite" data-checkout-feedback hidden></p>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" aria-label="Footer">
+        <div class="container footer__grid">
+          <div>
+            <a class="logo logo--footer" href="./index.html">Nebula <span>Commerce</span></a>
+            <p class="footer__tagline">Modern commerce infrastructure for creative retailers.</p>
+            <ul class="footer__social" aria-label="Social">
+              <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+              <li><a href="https://www.tiktok.com" target="_blank" rel="noreferrer">TikTok</a></li>
+              <li><a href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Platform</h3>
+            <ul>
+              <li><a href="./catalog.html">Marketplace</a></li>
+              <li><a href="./journal.html">Journal</a></li>
+              <li><a href="./support.html#integrations">Integrations</a></li>
+              <li><a href="./support.html#pricing">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li><a href="./journal.html#about">About Nebula</a></li>
+              <li><a href="./support.html#careers">Careers</a></li>
+              <li><a href="./support.html#press">Press</a></li>
+              <li><a href="./support.html#partners">Partners</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Help</h3>
+            <ul>
+              <li><a href="./support.html#support">Customer support</a></li>
+              <li><a href="./support.html#order-tracking">Track order</a></li>
+              <li><a href="./support.html#returns">Returns &amp; exchanges</a></li>
+              <li><a href="./support.html#accessibility">Accessibility</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container footer__legal">
+          <p>© <span data-year></span> Nebula Commerce. All rights reserved.</p>
+          <div class="footer__policies">
+            <a href="./support.html#privacy">Privacy</a>
+            <a href="./support.html#terms">Terms</a>
+            <a href="./support.html#cookies">Cookies</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="./assets/js/app.js"></script>
+    <script type="module" src="./assets/js/cart.js"></script>
+  </body>
+</html>
