@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nebula Commerce is a next-generation ecommerce experience with curated collections, immersive merchandising, and intelligent shopping tools."
+    />
+    <title>Nebula Commerce — Elevate Every Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page" id="top">
+      <a class="skip-link" href="#main">Skip to content</a>
+
+      <header class="site-header" aria-label="Global">
+        <div class="utility-bar" role="navigation" aria-label="Site utilities">
+          <div class="container utility-bar__inner">
+            <p class="utility-bar__promo">
+              Free global shipping over $150 · Extended returns through the holidays
+            </p>
+            <div class="utility-bar__actions">
+              <a class="utility-bar__link" href="#support">Support</a>
+              <a class="utility-bar__link" href="#order-tracking">Track order</a>
+              <div class="utility-language">
+                <button class="utility-bar__link utility-language__toggle" type="button" aria-expanded="false" aria-controls="language-menu">
+                  EN / USD
+                </button>
+                <div id="language-menu" class="utility-language__menu" hidden>
+                  <button type="button" data-locale="en-us">English · USD</button>
+                  <button type="button" data-locale="fr-fr">Français · EUR</button>
+                  <button type="button" data-locale="ja-jp">日本語 · JPY</button>
+                </div>
+                <p class="language-feedback" role="status" aria-live="polite" data-language-feedback hidden></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="header-primary">
+            <button class="header-primary__toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+              <span class="visually-hidden">Toggle navigation</span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <a class="logo" href="#top" aria-label="Nebula Commerce home">
+              Nebula <span>Commerce</span>
+            </a>
+            <form class="header-search" role="search" aria-label="Site search">
+              <label class="visually-hidden" for="search">Search products</label>
+              <input id="search" name="search" type="search" placeholder="Search for gear, creators, or collections" />
+              <button type="submit">Search</button>
+            </form>
+            <div class="header-icons" aria-label="Account shortcuts">
+              <button type="button" class="icon-button" aria-label="Open wishlist">
+                <span class="icon-heart" aria-hidden="true"></span>
+              </button>
+              <button type="button" class="icon-button" aria-label="Open account">
+                <span class="icon-user" aria-hidden="true"></span>
+              </button>
+              <button type="button" class="icon-button" aria-label="View cart">
+                <span class="icon-bag" aria-hidden="true"></span>
+                <span class="icon-badge">3</span>
+              </button>
+            </div>
+            <p class="cart-feedback" role="status" aria-live="polite" data-cart-feedback hidden></p>
+          </div>
+        </div>
+
+        <nav id="primary-navigation" class="primary-nav" aria-label="Primary">
+          <div class="container">
+            <ul class="primary-nav__list">
+              <li class="primary-nav__item">
+                <button class="primary-nav__link" type="button">New In</button>
+                <div class="mega-menu" role="group" aria-label="New in menu">
+                  <div>
+                    <h3>Curated by our buyers</h3>
+                    <ul>
+                      <li><a href="#collections">Creator collabs</a></li>
+                      <li><a href="#flash-marketplace">Drops under 72 hrs</a></li>
+                      <li><a href="#featured-products">Limited restocks</a></li>
+                      <li><a href="#loyalty">Nebula exclusives</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3>Shop by purpose</h3>
+                    <ul>
+                      <li><a href="#creator-studio">Remote work</a></li>
+                      <li><a href="#recovery-lab">Fitness &amp; recovery</a></li>
+                      <li><a href="#creator-studio">Pro creators</a></li>
+                      <li><a href="#sanctuary-living">Smart living</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu__feature">
+                    <p class="tag">Featured collection</p>
+                    <h4>Quantum Essentials Capsule</h4>
+                    <p>Adaptive gear engineered alongside the Nebula community. Ships with lifetime care.</p>
+                    <a class="inline-link" href="#collections">Shop the capsule</a>
+                  </div>
+                </div>
+              </li>
+              <li class="primary-nav__item">
+                <button class="primary-nav__link" type="button">Women</button>
+                <div class="mega-menu" role="group" aria-label="Women menu">
+                  <div>
+                    <h3>Featured</h3>
+                    <ul>
+                      <li><a href="#hero-heading">Statement outerwear</a></li>
+                      <li><a href="#bundle">Performance knitwear</a></li>
+                      <li><a href="#loyalty">Wellness tech</a></li>
+                      <li><a href="#product-orbit-pack">Modular bags</a></li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3>Shop by category</h3>
+                    <ul>
+                      <li><a href="#collections">Apparel</a></li>
+                      <li><a href="#product-novapulse">Footwear</a></li>
+                      <li><a href="#support">Accessories</a></li>
+                      <li><a href="#flash-heading">Gifting</a></li>
+                    </ul>
+                  </div>
+                  <div class="mega-menu__feature">
+                    <p class="tag">Member favorite</p>
+                    <h4>Aurora Motion Sneaker</h4>
+                    <p>Self-lacing cushioning that learns your stride and adjusts throughout the day.</p>
+                    <a class="inline-link" href="#featured-products">Explore the drop</a>
+                  </div>
+                </div>
+              </li>
+              <li class="primary-nav__item">
+                <a class="primary-nav__link" href="#bundle">Men</a>
+              </li>
+              <li class="primary-nav__item">
+                <a class="primary-nav__link" href="#commerce-tools">Tech</a>
+              </li>
+              <li class="primary-nav__item">
+                <a class="primary-nav__link" href="#sanctuary-living">Home</a>
+              </li>
+              <li class="primary-nav__item">
+                <a class="primary-nav__link" href="#journal">Creators</a>
+              </li>
+              <li class="primary-nav__item primary-nav__item--highlight">
+                <a class="primary-nav__cta" href="#loyalty">Join Nebula+</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main id="main">
+        <section class="hero" aria-labelledby="hero-heading">
+          <div class="container hero__inner">
+            <div class="hero__content">
+              <p class="eyebrow">The Orbit Collection · Winter 2025</p>
+              <h1 id="hero-heading">Future-ready staples engineered for everyday explorers.</h1>
+              <p>
+                Discover modular layers, adaptive footwear, and ambient smart devices crafted with sustainable textiles and transparent supply chains.
+              </p>
+              <div class="hero__actions">
+                <a class="btn btn--primary" href="#featured-products">Shop featured</a>
+                <a class="btn btn--ghost" href="#collections">Browse all collections</a>
+              </div>
+              <ul class="hero__meta" aria-label="Key highlights">
+                <li>
+                  <span class="meta-title">45+</span>
+                  <span class="meta-description">Creator partnerships</span>
+                </li>
+                <li>
+                  <span class="meta-title">Carbon negative</span>
+                  <span class="meta-description">Certified by Climate Ledger</span>
+                </li>
+                <li>
+                  <span class="meta-title">Delivery in 2 days</span>
+                  <span class="meta-description">Major cities worldwide</span>
+                </li>
+              </ul>
+            </div>
+            <div class="hero__media" aria-hidden="true">
+              <div class="hero-card hero-card--primary">
+                <p class="tag">Nebula+ exclusive</p>
+                <h2>Photon Traveler Parka</h2>
+                <p>Temperature-reactive insulation, detachable tech harness, and lifetime repairs.</p>
+                <div class="hero-card__footer">
+                  <span class="price">$420</span>
+                  <span class="pill">Ships in 24h</span>
+                </div>
+              </div>
+              <div class="hero-card hero-card--secondary">
+                <h3>Bundle &amp; save up to 30%</h3>
+                <p>Build a modular wardrobe tailored to climate, activity, and colorways.</p>
+                <a class="inline-link" href="#bundle">Start a bundle</a>
+              </div>
+            </div>
+            <p class="product-grid__empty" role="status" aria-live="polite" hidden>
+              No items match your filters just yet. Clear your filters or try another search.
+            </p>
+          </div>
+        </section>
+
+        <section class="service-highlights" aria-label="Experience benefits">
+          <div class="container service-highlights__grid">
+            <article>
+              <h3>Concierge support</h3>
+              <p>24/7 product specialists on chat, video, or in-store appointments.</p>
+            </article>
+            <article>
+              <h3>Intelligent sizing</h3>
+              <p>AI fit profiles synced across devices with easy adjustments at checkout.</p>
+            </article>
+            <article>
+              <h3>Flexible payments</h3>
+              <p>Split payments, subscriptions, and business purchasing built-in.</p>
+            </article>
+            <article>
+              <h3>Planet positive</h3>
+              <p>Traceable sourcing, regenerative partners, and take-back programs.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="featured-products" id="featured-products" aria-labelledby="featured-heading">
+          <div class="container">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Featured gear</p>
+                <h2 id="featured-heading">Personalized recommendations powered by Nebula IQ</h2>
+              </div>
+              <a class="inline-link" href="#featured-products-grid">View all 128 products</a>
+            </div>
+            <div class="filters" role="toolbar" aria-label="Product filters">
+              <button type="button" class="filter filter--active" data-filter="for-you">For you</button>
+              <button type="button" class="filter" data-filter="trending">Trending</button>
+              <button type="button" class="filter" data-filter="best-rated">Best rated</button>
+              <button type="button" class="filter" data-filter="under-200">Under $200</button>
+              <button type="button" class="filter" data-filter="sustainable">Sustainable</button>
+            </div>
+            <p class="product-results" data-products-summary>Showing 4 curated picks</p>
+            <div class="product-grid" role="list" id="featured-products-grid">
+              <article
+                class="product-card"
+                role="listitem"
+                id="product-novapulse"
+                data-name="NovaPulse Runner"
+                data-price="195"
+                data-description="Adaptive cushioning · Midnight Iris"
+                data-groups="for-you trending under-200"
+              >
+                <p class="tag">New arrival</p>
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=400&q=80" alt="A pair of sleek black sneakers" />
+                <h3>NovaPulse Runner</h3>
+                <p class="product-card__subtitle">Adaptive cushioning · Midnight Iris</p>
+                <div class="product-card__price">
+                  <span class="price">$195</span>
+                  <span class="compare">$230</span>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" class="btn btn--ghost" data-action="quick-view">Quick view</button>
+                  <button type="button" class="btn btn--primary" data-action="add-to-cart">Add to cart</button>
+                </div>
+              </article>
+              <article
+                class="product-card"
+                role="listitem"
+                id="product-orbit-pack"
+                data-name="Orbit Modular Pack"
+                data-price="280"
+                data-description="Convertible 4-in-1 carry system"
+                data-groups="for-you trending best-rated"
+              >
+                <p class="tag tag--purple">Member favorite</p>
+                <img src="https://images.unsplash.com/photo-1512497612315-88a2965fc6be?auto=format&fit=crop&w=400&q=80" alt="A modern backpack" />
+                <h3>Orbit Modular Pack</h3>
+                <p class="product-card__subtitle">Convertible 4-in-1 carry system</p>
+                <div class="product-card__price">
+                  <span class="price">$280</span>
+                </div>
+                <ul class="product-card__meta">
+                  <li>4 colorways</li>
+                  <li>Lifetime warranty</li>
+                </ul>
+                <div class="product-card__actions">
+                  <button type="button" class="btn btn--ghost" data-action="quick-view">Customize</button>
+                  <button type="button" class="btn btn--primary" data-action="add-to-cart">Add to cart</button>
+                </div>
+              </article>
+              <article
+                class="product-card"
+                role="listitem"
+                id="product-helio-sync"
+                data-name="Helio Sync Watch"
+                data-price="360"
+                data-description="Solar-powered wellness tracking"
+                data-groups="for-you best-rated sustainable"
+              >
+                <p class="tag">Back in stock</p>
+                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=400&q=80" alt="A minimalist smartwatch" />
+                <h3>Helio Sync Watch</h3>
+                <p class="product-card__subtitle">Solar-powered wellness tracking</p>
+                <div class="product-card__price">
+                  <span class="price">$360</span>
+                </div>
+                <div class="product-card__rating" aria-label="Rated 4.8 out of 5">
+                  <span>★★★★★</span>
+                  <span>4.8 (2.4k)</span>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" class="btn btn--ghost" data-action="quick-view">Quick view</button>
+                  <button type="button" class="btn btn--primary" data-action="add-to-cart">Add to cart</button>
+                </div>
+              </article>
+              <article
+                class="product-card"
+                role="listitem"
+                id="product-atmos-layer"
+                data-name="Atmos Layering Set"
+                data-price="480"
+                data-description="Thermoregulating base, mid, and shell"
+                data-groups="for-you sustainable"
+              >
+                <p class="tag">Bundle &amp; save</p>
+                <img src="https://images.unsplash.com/photo-1503341455253-b2e723bb3dbb?auto=format&fit=crop&w=400&q=80" alt="Folded clothing pieces" />
+                <h3>Atmos Layering Set</h3>
+                <p class="product-card__subtitle">Thermoregulating base, mid, and shell</p>
+                <div class="product-card__price">
+                  <span class="price">$480</span>
+                  <span class="compare">$560</span>
+                </div>
+                <div class="product-card__actions">
+                  <button type="button" class="btn btn--ghost" data-action="quick-view">View bundle</button>
+                  <button type="button" class="btn btn--primary" data-action="add-to-cart">Add to cart</button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="flash-sale" aria-labelledby="flash-heading">
+          <div class="container flash-sale__inner">
+            <div>
+              <p class="eyebrow">Flash event</p>
+              <h2 id="flash-heading">48-hour creator marketplace</h2>
+              <p>Support independent designers with limited-time pricing, digital collectibles, and live styling sessions.</p>
+              <dl class="countdown" aria-label="Countdown to sale end">
+                <div>
+                  <dt>18</dt>
+                  <dd>Hours</dd>
+                </div>
+                <div>
+                  <dt>24</dt>
+                  <dd>Minutes</dd>
+                </div>
+                <div>
+                  <dt>12</dt>
+                  <dd>Seconds</dd>
+                </div>
+              </dl>
+              <a class="btn btn--primary" href="#flash-marketplace">Enter marketplace</a>
+            </div>
+            <div class="flash-sale__products" role="list" id="flash-marketplace">
+              <article role="listitem">
+                <p class="tag">Live now</p>
+                <h3>Celeste Atelier · Techwear drop</h3>
+                <p>Dynamic silhouettes with reactive fibers and augmented reality fittings.</p>
+              </article>
+              <article role="listitem">
+                <p class="tag">Upcoming</p>
+                <h3>Studio Kairo · Neo-home edit</h3>
+                <p>Architectural accents, sensory lighting, and modular furniture.</p>
+              </article>
+              <article role="listitem">
+                <p class="tag">Upcoming</p>
+                <h3>Solace Lab · Mindful devices</h3>
+                <p>Biometric wearables and rituals for calmer focus.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="collections" id="collections" aria-labelledby="collections-heading">
+          <div class="container">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Curated universes</p>
+                <h2 id="collections-heading">Shop by collection experience</h2>
+              </div>
+              <div class="section-heading__actions">
+                <button type="button" class="chip chip--active" data-collection-filter="all">All</button>
+                <button type="button" class="chip" data-collection-filter="apparel">Apparel</button>
+                <button type="button" class="chip" data-collection-filter="tech">Tech</button>
+                <button type="button" class="chip" data-collection-filter="home">Home</button>
+                <button type="button" class="chip" data-collection-filter="wellness">Wellness</button>
+              </div>
+            </div>
+            <div class="collection-grid" role="list">
+              <article class="collection-card" role="listitem" id="lumina-commute" data-collection="apparel tech">
+                <h3>Lumina Commute</h3>
+                <p>Weather-proof layers, smart helmets, and visibility-first accessories built for urban movement.</p>
+                <ul>
+                  <li>12 curated looks</li>
+                  <li>Shop the story</li>
+                  <li>Virtual concierge</li>
+                </ul>
+              </article>
+              <article class="collection-card" role="listitem" id="sanctuary-living" data-collection="home wellness">
+                <h3>Sanctuary Living</h3>
+                <p>Transform interiors with scent, light, and soundscapes tuned for mindful homes.</p>
+                <ul>
+                  <li>Connected lighting</li>
+                  <li>Artisan ceramics</li>
+                  <li>Subscription refills</li>
+                </ul>
+              </article>
+              <article class="collection-card" role="listitem" id="creator-studio" data-collection="tech">
+                <h3>Creator Studio</h3>
+                <p>Ergonomic furniture, audio ecosystems, and collaborative tools for next-level production.</p>
+                <ul>
+                  <li>AI desk assistant</li>
+                  <li>Micro-studio bundles</li>
+                  <li>Trade pricing</li>
+                </ul>
+              </article>
+              <article class="collection-card" role="listitem" id="recovery-lab" data-collection="wellness">
+                <h3>Recovery Lab</h3>
+                <p>Biome recovery apparel and devices co-designed with athletes and physiologists.</p>
+                <ul>
+                  <li>Cold and heat therapy</li>
+                  <li>Guided routines</li>
+                  <li>Membership clinics</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="bundle" id="bundle" aria-labelledby="bundle-heading">
+          <div class="container bundle__inner">
+            <div class="bundle__content">
+              <p class="eyebrow">Bundle builder</p>
+              <h2 id="bundle-heading">Create your climate-ready kit</h2>
+              <p>
+                Mix and match layers, accessories, and smart devices. Our configurator recommends pairings by climate, activity, and color palette—then syncs them to recurring care plans.
+              </p>
+              <ul class="bundle__features">
+                <li>Dynamic pricing with stackable offers</li>
+                <li>Real-time inventory across stores</li>
+                <li>Ship together or staggered deliveries</li>
+              </ul>
+              <div class="bundle__actions">
+                <a class="btn btn--primary" href="#bundle-summary">Launch configurator</a>
+                <a class="btn btn--ghost" href="#support">Chat with stylist</a>
+              </div>
+            </div>
+            <div class="bundle__panel" aria-label="Bundle summary" id="bundle-summary">
+              <div class="bundle__header">
+                <h3>Your kit</h3>
+                <p>2 of 5 slots filled</p>
+              </div>
+              <ul class="bundle__items">
+                <li>
+                  <span>Photon Traveler Parka</span>
+                  <span>$420</span>
+                </li>
+                <li>
+                  <span>Atmos Base Layer</span>
+                  <span>$110</span>
+                </li>
+              </ul>
+              <div class="bundle__summary">
+                <div>
+                  <span>Bundle savings</span>
+                  <span>-$96</span>
+                </div>
+                <div>
+                  <span>Estimated total</span>
+                  <span>$434</span>
+                </div>
+              </div>
+              <button type="button" class="btn btn--primary">Secure checkout</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="commerce-tools" id="commerce-tools" aria-labelledby="tools-heading">
+          <div class="container commerce-tools__grid">
+            <article>
+              <h2 id="tools-heading">Powerful tools that elevate every cart</h2>
+              <p>From subscriptions to B2B portals, Nebula Commerce unifies the features modern brands need to scale globally without complexity.</p>
+              <ul>
+                <li>Segmented campaigns with automated lifecycle journeys</li>
+                <li>Omnichannel inventory, fulfillment, and clienteling</li>
+                <li>Built-in loyalty, referrals, and membership billing</li>
+                <li>Advanced analytics with predictive demand insights</li>
+              </ul>
+            </article>
+            <article class="tool-card">
+              <h3>Unified dashboard</h3>
+              <p>Manage products, merchandising, promotions, and insights from one real-time control center.</p>
+              <ul>
+                <li>Role-based permissions</li>
+                <li>Bulk edit and automation</li>
+                <li>AI-powered copy and translations</li>
+              </ul>
+            </article>
+            <article class="tool-card">
+              <h3>Retail &amp; wholesale ready</h3>
+              <p>Flexible catalogs and pricing tiers with quote-to-cash flows for partners and enterprise buyers.</p>
+              <ul>
+                <li>Self-serve portals</li>
+                <li>Net terms and invoicing</li>
+                <li>Custom storefront experiences</li>
+              </ul>
+            </article>
+            <article class="tool-card" id="developer-docs">
+              <h3>Apps &amp; integrations</h3>
+              <p>Connect payments, marketing, logistics, and community platforms with zero-code installers.</p>
+              <ul>
+                <li>1,200+ curated integrations</li>
+                <li>GraphQL and REST APIs</li>
+                <li>Partner marketplace</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="testimonials" aria-labelledby="testimonial-heading">
+          <div class="container testimonials__inner">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">What our community says</p>
+                <h2 id="testimonial-heading">Trusted by 2.8M members worldwide</h2>
+              </div>
+              <div class="testimonials__nav" role="group" aria-label="Testimonial controls">
+                <button type="button" class="icon-button" aria-label="Previous testimonial">‹</button>
+                <button type="button" class="icon-button" aria-label="Next testimonial">›</button>
+              </div>
+            </div>
+            <div class="testimonial-grid" role="list">
+              <article class="testimonial-card" role="listitem">
+                <p class="testimonial-quote">
+                  “The Nebula+ membership unlocks bespoke styling, restock alerts, and early access that feels personal—not promotional.”
+                </p>
+                <p class="testimonial-author">— Lila Chen, Creative Director</p>
+                <p class="testimonial-meta">Loyalty member since 2021</p>
+              </article>
+              <article class="testimonial-card" role="listitem">
+                <p class="testimonial-quote">
+                  “Our studio outfitted the entire team using bundle recommendations and the omni fulfillment network. It saved weeks of coordination.”
+                </p>
+                <p class="testimonial-author">— Mateo Rivera, Founder of Kinetic Labs</p>
+                <p class="testimonial-meta">B2B partner</p>
+              </article>
+              <article class="testimonial-card" role="listitem">
+                <p class="testimonial-quote">
+                  “From checkout to returns, the experience feels cohesive online and in-store. The concierge team is unmatched.”
+                </p>
+                <p class="testimonial-author">— Aanya Kapoor, Nebula Flagship Member</p>
+                <p class="testimonial-meta">San Francisco, CA</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="loyalty" id="loyalty" aria-labelledby="loyalty-heading">
+          <div class="container loyalty__inner">
+            <div class="loyalty__content">
+              <p class="eyebrow">Nebula+ loyalty</p>
+              <h2 id="loyalty-heading">Membership that moves with you</h2>
+              <p>Unlock priority access, experiential retail, and member-exclusive drops designed in collaboration with our community council.</p>
+              <ul class="loyalty__grid">
+                <li>
+                  <h3>Galaxy tier</h3>
+                  <p>Earn 2x points, concierge tailoring, and event invitations.</p>
+                </li>
+                <li>
+                  <h3>Supernova tier</h3>
+                  <p>Custom capsule design, 4-hour deliveries, and private client advisor.</p>
+                </li>
+                <li>
+                  <h3>Cosmos tier</h3>
+                  <p>Equity drops, lab access, and lifetime repairs.</p>
+                </li>
+              </ul>
+              <div class="loyalty__actions">
+                <a class="btn btn--primary" href="#membership">Become a member</a>
+                <a class="btn btn--ghost" href="#membership">Compare benefits</a>
+              </div>
+            </div>
+            <aside class="loyalty__perk">
+              <p class="tag">Member preview</p>
+              <h3>Immersive flagship sessions</h3>
+              <p>Reserve interactive appointments inside our mixed-reality stores and co-create with Nebula designers in real time.</p>
+              <a class="inline-link" href="#support-showroom">Book a session</a>
+            </aside>
+          </div>
+        </section>
+
+        <section class="membership" id="membership" aria-labelledby="membership-heading">
+          <div class="container membership__inner">
+            <div>
+              <p class="eyebrow">Membership concierge</p>
+              <h2 id="membership-heading">Request your Nebula+ invitation</h2>
+              <p>
+                Tell us a little about your interests and we&apos;ll tailor benefits, events, and onboarding with a membership
+                specialist within 24 hours.
+              </p>
+            </div>
+            <form class="membership__form" novalidate>
+              <div class="form-field">
+                <label for="member-name">Full name</label>
+                <input id="member-name" name="member-name" type="text" autocomplete="name" required placeholder="Jamie Rivera" />
+              </div>
+              <div class="form-field">
+                <label for="member-email">Email address</label>
+                <input id="member-email" name="member-email" type="email" autocomplete="email" required placeholder="you@example.com" />
+              </div>
+              <div class="form-field">
+                <label for="member-tier">Preferred tier</label>
+                <select id="member-tier" name="member-tier" required>
+                  <option value="">Select a tier</option>
+                  <option value="galaxy">Galaxy · Core perks</option>
+                  <option value="supernova">Supernova · Premium concierge</option>
+                  <option value="cosmos">Cosmos · Ultimate experience</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="member-notes">What excites you about Nebula?</label>
+                <textarea id="member-notes" name="member-notes" rows="3" placeholder="Share interests, goals, or experiences you&apos;re looking for."></textarea>
+              </div>
+              <button type="submit" class="btn btn--primary">Submit request</button>
+              <p class="form-feedback" role="status" aria-live="polite" data-membership-feedback hidden></p>
+            </form>
+          </div>
+        </section>
+
+        <section class="insights" id="journal" aria-labelledby="insights-heading">
+          <div class="container insights__grid">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Nebula journal</p>
+                <h2 id="insights-heading">Stay ahead with retail intelligence</h2>
+              </div>
+              <a class="inline-link" href="#journal">Visit the journal</a>
+            </div>
+            <article class="insight-card" id="journal-playbook">
+              <p class="tag">Playbook</p>
+              <h3>Designing immersive product storytelling across channels</h3>
+              <p>How Nebula integrates physical, digital, and social commerce touchpoints to drive engagement.</p>
+              <a class="inline-link" href="#journal-playbook">Read more</a>
+            </article>
+            <article class="insight-card" id="journal-case-study">
+              <p class="tag">Case study</p>
+              <h3>Scaling Nebula for B2B partners in 32 markets</h3>
+              <p>Discover the infrastructure powering our trade portals and supply chain orchestration.</p>
+              <a class="inline-link" href="#journal-case-study">Explore the case</a>
+            </article>
+            <article class="insight-card" id="journal-trend-report">
+              <p class="tag">Trend report</p>
+              <h3>2025 consumer signals shaping adaptive retail</h3>
+              <p>Insights from 40,000 community members and retail leaders.</p>
+              <a class="inline-link" href="#journal-trend-report">Download the report</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="support" aria-labelledby="support-heading">
+          <div class="container support__grid">
+            <article>
+              <p class="eyebrow">Always-on support</p>
+              <h2 id="support-heading">We&apos;re here through every step</h2>
+              <p>From virtual fittings to global logistics, our specialists help you deliver memorable experiences across every channel.</p>
+            </article>
+            <div class="support__cards" role="list">
+              <article class="support-card" role="listitem" id="support-showroom">
+                <h3>Virtual showroom</h3>
+                <p>Book a live session with a product expert to see sizing, textures, and styling in real time.</p>
+                <a class="inline-link" href="#order-tracking">Reserve now</a>
+              </article>
+              <article class="support-card" role="listitem" id="support-logistics">
+                <h3>Global fulfillment</h3>
+                <p>Track packages, manage returns, and coordinate pickups across 180 countries.</p>
+                <a class="inline-link" href="#order-tracking">Manage logistics</a>
+              </article>
+              <article class="support-card" role="listitem" id="support-developers">
+                <h3>Developer center</h3>
+                <p>Access API docs, SDKs, and sandbox environments to extend Nebula Commerce.</p>
+                <a class="inline-link" href="#developer-docs">Explore docs</a>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="order-tracking" id="order-tracking" aria-labelledby="order-heading">
+          <div class="container order-tracking__inner">
+            <div>
+              <p class="eyebrow">Track &amp; manage</p>
+              <h2 id="order-heading">Check your order status in real time</h2>
+              <p>
+                Enter your order number and email address to see the latest updates, delivery estimates, and support options.
+                We&apos;ll send you a confirmation email with a secure link to your timeline.
+              </p>
+            </div>
+            <form class="order-tracking__form" novalidate>
+              <div class="form-field">
+                <label for="order-number">Order number</label>
+                <input id="order-number" name="order-number" type="text" inputmode="numeric" autocomplete="off" required placeholder="e.g. NC-582104" />
+              </div>
+              <div class="form-field">
+                <label for="order-email">Email address</label>
+                <input id="order-email" name="order-email" type="email" autocomplete="email" required placeholder="you@example.com" />
+              </div>
+              <button type="submit" class="btn btn--primary">Track order</button>
+              <p class="form-feedback" role="status" aria-live="polite" data-order-feedback hidden></p>
+            </form>
+          </div>
+        </section>
+
+        <section class="newsletter" aria-labelledby="newsletter-heading">
+          <div class="container newsletter__inner">
+            <div class="newsletter__content">
+              <p class="eyebrow">Stay in the orbit</p>
+              <h2 id="newsletter-heading">Subscribe for drops, invites, and insights</h2>
+              <p>Get curated product launches, exclusive editorial content, and early-access event invites delivered weekly.</p>
+              <form class="newsletter__form">
+                <label class="visually-hidden" for="email">Email address</label>
+                <input id="email" type="email" name="email" placeholder="you@example.com" required />
+                <button type="submit" class="btn btn--primary">Join the list</button>
+              </form>
+              <p class="form-feedback" role="status" aria-live="polite" data-newsletter-feedback hidden></p>
+              <p class="newsletter__disclaimer">By subscribing you agree to our privacy policy and consent to receive communications from Nebula Commerce.</p>
+            </div>
+            <aside class="app-promo" aria-label="Download the app">
+              <p class="tag">Shop anywhere</p>
+              <h3>Nebula on mobile</h3>
+              <p>Build carts, manage memberships, and unlock AR styling experiences with the Nebula app.</p>
+              <div class="app-promo__badges">
+                <a href="https://apps.apple.com/us/app/id375380948" aria-label="Download on the App Store" target="_blank" rel="noopener">App Store</a>
+                <a href="https://play.google.com/store" aria-label="Get it on Google Play" target="_blank" rel="noopener">Google Play</a>
+              </div>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" aria-label="Footer">
+        <div class="container site-footer__top">
+          <div>
+            <a class="logo" href="#top">Nebula <span>Commerce</span></a>
+            <p>Elevate every cart with intelligent merchandising, curated storytelling, and planet-positive operations.</p>
+            <div class="footer-social" aria-label="Social links">
+              <a href="https://www.instagram.com" aria-label="Nebula on Instagram" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://www.tiktok.com" aria-label="Nebula on TikTok" target="_blank" rel="noopener">TikTok</a>
+              <a href="https://www.youtube.com" aria-label="Nebula on YouTube" target="_blank" rel="noopener">YouTube</a>
+              <a href="https://www.linkedin.com" aria-label="Nebula on LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+          </div>
+          <div class="footer-links">
+            <div>
+              <h3>Shop</h3>
+              <ul>
+                <li><a href="#featured-products">Women</a></li>
+                <li><a href="#bundle">Men</a></li>
+                <li><a href="#commerce-tools">Tech</a></li>
+                <li><a href="#sanctuary-living">Home</a></li>
+                <li><a href="#flash-heading">Gifting</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Experience</h3>
+              <ul>
+                <li><a href="#loyalty">Membership</a></li>
+                <li><a href="#support-showroom">Flagship stores</a></li>
+                <li><a href="#flash-marketplace">Creator marketplace</a></li>
+                <li><a href="#journal">Events &amp; workshops</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Company</h3>
+              <ul>
+                <li><a href="#top">About Nebula</a></li>
+                <li><a href="#support">Careers</a></li>
+                <li><a href="#journal">Press</a></li>
+                <li><a href="#loyalty">Sustainability</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3>Support</h3>
+              <ul>
+                <li><a href="#support">Help center</a></li>
+                <li><a href="#order-tracking">Shipping &amp; returns</a></li>
+                <li><a href="#support">Accessibility</a></li>
+                <li><a href="#policies">Privacy &amp; terms</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="container site-footer__policies" id="policies">
+          <p>
+            Read our <a href="https://nebula-commerce.example/privacy" target="_blank" rel="noopener">privacy policy</a> and
+            <a href="https://nebula-commerce.example/terms" target="_blank" rel="noopener">terms of use</a> for detailed
+            information about how we protect your data.
+          </p>
+        </div>
+        <div class="container site-footer__bottom">
+          <p>&copy; 2025 Nebula Commerce. All rights reserved.</p>
+          <div class="footer-badges">
+            <span>PCI DSS</span>
+            <span>Climate Neutral</span>
+            <span>B Corp</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div class="modal" id="product-modal" hidden>
+      <div class="modal__overlay" data-close-modal></div>
+      <div class="modal__dialog" role="dialog" aria-modal="true" aria-labelledby="product-modal-title">
+        <button class="modal__close" type="button" aria-label="Close quick view" data-close-modal>&times;</button>
+        <div class="modal__content">
+          <img class="modal__image" src="" alt="" />
+          <div class="modal__details">
+            <h3 id="product-modal-title"></h3>
+            <p class="modal__description"></p>
+            <p class="modal__price"></p>
+            <button type="button" class="btn btn--primary modal__add" data-action="add-to-cart">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const navToggle = document.querySelector('.header-primary__toggle');
+      const primaryNav = document.querySelector('.primary-nav');
+      if (navToggle && primaryNav) {
+        navToggle.addEventListener('click', () => {
+          const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+          navToggle.setAttribute('aria-expanded', String(!expanded));
+          primaryNav.classList.toggle('primary-nav--open');
+          document.body.classList.toggle('nav-open');
+        });
+      }
+
+      document.querySelectorAll('.primary-nav__item').forEach((item) => {
+        const trigger = item.querySelector('button.primary-nav__link');
+        const menu = item.querySelector('.mega-menu');
+        if (!trigger || !menu) return;
+        trigger.addEventListener('mouseenter', () => {
+          if (window.matchMedia('(min-width: 960px)').matches) {
+            item.classList.add('primary-nav__item--active');
+          }
+        });
+        item.addEventListener('mouseleave', () => {
+          if (window.matchMedia('(min-width: 960px)').matches) {
+            item.classList.remove('primary-nav__item--active');
+          }
+        });
+        trigger.addEventListener('click', () => {
+          if (window.matchMedia('(max-width: 959px)').matches) {
+            item.classList.toggle('primary-nav__item--active');
+          }
+        });
+      });
+
+      const languageWrapper = document.querySelector('.utility-language');
+      const languageToggle = document.querySelector('.utility-language__toggle');
+      const languageMenu = document.getElementById('language-menu');
+      const languageFeedback = document.querySelector('[data-language-feedback]');
+      let languageTimeout;
+      if (languageWrapper && languageToggle && languageMenu) {
+        const closeLanguageMenu = () => {
+          languageMenu.hidden = true;
+          languageToggle.setAttribute('aria-expanded', 'false');
+        };
+
+        languageToggle.addEventListener('click', () => {
+          const expanded = languageToggle.getAttribute('aria-expanded') === 'true';
+          languageToggle.setAttribute('aria-expanded', String(!expanded));
+          languageMenu.hidden = expanded;
+        });
+
+        languageMenu.querySelectorAll('button').forEach((option) => {
+          option.addEventListener('click', () => {
+            languageToggle.textContent = option.textContent;
+            if (languageFeedback) {
+              languageFeedback.textContent = `Language and currency updated to ${option.textContent}.`;
+              languageFeedback.hidden = false;
+              clearTimeout(languageTimeout);
+              languageTimeout = window.setTimeout(() => {
+                languageFeedback.hidden = true;
+              }, 4000);
+            }
+            closeLanguageMenu();
+            languageToggle.focus();
+          });
+        });
+
+        document.addEventListener('click', (event) => {
+          if (!languageWrapper.contains(event.target)) {
+            closeLanguageMenu();
+          }
+        });
+      }
+
+      const productCards = Array.from(document.querySelectorAll('.product-card'));
+      const filterButtons = document.querySelectorAll('.filters [data-filter]');
+      const productSummary = document.querySelector('[data-products-summary]');
+      const productEmpty = document.querySelector('.product-grid__empty');
+      const summaryLabels = {
+        'for-you': 'curated picks',
+        trending: 'trending standouts',
+        'best-rated': 'top-rated essentials',
+        'under-200': 'finds under $200',
+        sustainable: 'planet-positive gear',
+      };
+      let currentFilter = 'for-you';
+      let currentSearch = '';
+
+      const formatCurrency = (value) =>
+        new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(Number(value || 0));
+
+      const updateProducts = () => {
+        let visibleCount = 0;
+        productCards.forEach((card) => {
+          const groups = (card.dataset.groups || '').split(' ');
+          const name = card.dataset.name?.toLowerCase() || '';
+          const description = card.dataset.description?.toLowerCase() || '';
+          const matchesFilter = currentFilter === 'all' || groups.includes(currentFilter);
+          const matchesSearch = !currentSearch || name.includes(currentSearch) || description.includes(currentSearch);
+          const shouldShow = matchesFilter && matchesSearch;
+          card.classList.toggle('is-hidden', !shouldShow);
+          card.setAttribute('aria-hidden', shouldShow ? 'false' : 'true');
+          if (shouldShow) {
+            visibleCount += 1;
+          }
+        });
+
+        if (productSummary) {
+          const label = summaryLabels[currentFilter] || 'items';
+          productSummary.textContent = visibleCount ? `Showing ${visibleCount} ${label}` : 'No products to display';
+        }
+
+        if (productEmpty) {
+          if (visibleCount === 0) {
+            const searchMessage = currentSearch ? ` matching “${currentSearch}”` : '';
+            productEmpty.textContent = `No items${searchMessage} in this view. Clear filters or try another search.`;
+            productEmpty.hidden = false;
+          } else {
+            productEmpty.hidden = true;
+          }
+        }
+      };
+
+      filterButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          currentFilter = button.dataset.filter || 'for-you';
+          filterButtons.forEach((other) => other.classList.toggle('filter--active', other === button));
+          updateProducts();
+        });
+      });
+
+      const searchForm = document.querySelector('.header-search');
+      const searchInput = searchForm?.querySelector('input[type="search"]');
+      if (searchForm && searchInput) {
+        searchForm.addEventListener('submit', (event) => {
+          event.preventDefault();
+          currentSearch = searchInput.value.trim().toLowerCase();
+          updateProducts();
+        });
+        searchInput.addEventListener('input', () => {
+          currentSearch = searchInput.value.trim().toLowerCase();
+          updateProducts();
+        });
+      }
+
+      const collectionChips = document.querySelectorAll('[data-collection-filter]');
+      const collectionCards = document.querySelectorAll('.collection-card');
+      let currentCollection = 'all';
+
+      const updateCollections = () => {
+        collectionCards.forEach((card) => {
+          const groups = (card.dataset.collection || '').split(' ');
+          const shouldShow = currentCollection === 'all' || groups.includes(currentCollection);
+          card.classList.toggle('is-hidden', !shouldShow);
+        });
+      };
+
+      collectionChips.forEach((chip) => {
+        chip.addEventListener('click', () => {
+          currentCollection = chip.dataset.collectionFilter || 'all';
+          collectionChips.forEach((other) => other.classList.toggle('chip--active', other === chip));
+          updateCollections();
+        });
+      });
+
+      const cartBadge = document.querySelector('.icon-badge');
+      const cartFeedback = document.querySelector('[data-cart-feedback]');
+      let cartCount = Number(cartBadge?.textContent) || 0;
+      let cartTimeout;
+
+      if (cartBadge) {
+        cartBadge.setAttribute('aria-label', `${cartCount} items in cart`);
+      }
+
+      const showCartFeedback = (message) => {
+        if (!cartFeedback) return;
+        cartFeedback.textContent = message;
+        cartFeedback.hidden = false;
+        clearTimeout(cartTimeout);
+        cartTimeout = window.setTimeout(() => {
+          cartFeedback.hidden = true;
+        }, 4000);
+      };
+
+      const addToCart = (card) => {
+        if (!cartBadge || !card) return;
+        cartCount += 1;
+        cartBadge.textContent = String(cartCount);
+        cartBadge.setAttribute('aria-label', `${cartCount} items in cart`);
+        showCartFeedback(`${card.dataset.name || 'Item'} added to cart.`);
+      };
+
+      const secureCheckoutButton = document.querySelector('.bundle__panel .btn--primary');
+      secureCheckoutButton?.addEventListener('click', () => {
+        showCartFeedback('Secure checkout is coming soon—finish configuring your bundle to continue.');
+      });
+
+      document.querySelector('button[aria-label="Open wishlist"]')?.addEventListener('click', () => {
+        showCartFeedback('Your wishlist is ready when you sign in.');
+      });
+
+      document.querySelector('button[aria-label="Open account"]')?.addEventListener('click', () => {
+        showCartFeedback('Sign in experience launching shortly.');
+      });
+
+      document.querySelectorAll('[data-action="add-to-cart"]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const card = button.closest('.product-card');
+          if (card) {
+            addToCart(card);
+          }
+        });
+      });
+
+      const modal = document.getElementById('product-modal');
+      const modalImage = modal?.querySelector('.modal__image');
+      const modalTitle = modal?.querySelector('#product-modal-title');
+      const modalDescription = modal?.querySelector('.modal__description');
+      const modalPrice = modal?.querySelector('.modal__price');
+      const modalAdd = modal?.querySelector('.modal__add');
+      let activeCard = null;
+      let lastFocusedElement = null;
+
+      const openModal = (card) => {
+        if (!modal || !modalImage || !modalTitle || !modalDescription || !modalPrice || !modalAdd) return;
+        activeCard = card;
+        const image = card.querySelector('img');
+        modalImage.src = image?.getAttribute('src') || '';
+        modalImage.alt = image?.getAttribute('alt') || '';
+        modalTitle.textContent = card.dataset.name || 'Product';
+        modalDescription.textContent = card.dataset.description || '';
+        modalPrice.textContent = formatCurrency(card.dataset.price);
+        modal.hidden = false;
+        modal.classList.add('modal--open');
+        document.body.classList.add('modal-open');
+        lastFocusedElement = document.activeElement;
+        modalAdd.focus();
+      };
+
+      const closeModal = () => {
+        if (!modal) return;
+        modal.classList.remove('modal--open');
+        modal.hidden = true;
+        document.body.classList.remove('modal-open');
+        if (lastFocusedElement) {
+          lastFocusedElement.focus();
+        }
+        activeCard = null;
+      };
+
+      document.querySelectorAll('[data-action="quick-view"]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const card = button.closest('.product-card');
+          if (card) {
+            openModal(card);
+          }
+        });
+      });
+
+      modal?.addEventListener('click', (event) => {
+        if (event.target instanceof HTMLElement && event.target.dataset.closeModal !== undefined) {
+          closeModal();
+        }
+      });
+
+      modalAdd?.addEventListener('click', () => {
+        if (activeCard) {
+          addToCart(activeCard);
+        }
+        closeModal();
+      });
+
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && modal && !modal.hidden) {
+          closeModal();
+        }
+      });
+
+      const testimonials = Array.from(document.querySelectorAll('.testimonial-card'));
+      const testimonialPrev = document.querySelector('.testimonials__nav button[aria-label="Previous testimonial"]');
+      const testimonialNext = document.querySelector('.testimonials__nav button[aria-label="Next testimonial"]');
+      let testimonialIndex = 0;
+
+      const updateTestimonials = () => {
+        testimonials.forEach((card, index) => {
+          const isActive = index === testimonialIndex;
+          card.classList.toggle('testimonial-card--active', isActive);
+          card.setAttribute('aria-hidden', isActive ? 'false' : 'true');
+        });
+      };
+
+      testimonialPrev?.addEventListener('click', () => {
+        testimonialIndex = (testimonialIndex - 1 + testimonials.length) % testimonials.length;
+        updateTestimonials();
+      });
+
+      testimonialNext?.addEventListener('click', () => {
+        testimonialIndex = (testimonialIndex + 1) % testimonials.length;
+        updateTestimonials();
+      });
+
+      const orderForm = document.querySelector('.order-tracking__form');
+      const orderFeedback = document.querySelector('[data-order-feedback]');
+      if (orderForm && orderFeedback) {
+        orderForm.addEventListener('submit', (event) => {
+          event.preventDefault();
+          const orderNumberInput = orderForm.querySelector('#order-number');
+          const orderEmailInput = orderForm.querySelector('#order-email');
+          if (!orderForm.checkValidity() || !orderNumberInput || !orderEmailInput) {
+            orderFeedback.textContent = 'Please add a valid order number and email so we can find your details.';
+            orderFeedback.hidden = false;
+            orderFeedback.classList.remove('form-feedback--success');
+            orderFeedback.classList.add('form-feedback--error');
+            orderForm.reportValidity();
+            return;
+          }
+          const orderNumber = orderNumberInput.value.trim().toUpperCase();
+          const email = orderEmailInput.value.trim();
+          orderFeedback.textContent = `Order ${orderNumber} is in transit. A detailed timeline is on its way to ${email}.`;
+          orderFeedback.hidden = false;
+          orderFeedback.classList.remove('form-feedback--error');
+          orderFeedback.classList.add('form-feedback--success');
+          orderForm.reset();
+          window.setTimeout(() => {
+            orderFeedback.hidden = true;
+          }, 6000);
+        });
+      }
+
+      const newsletterForm = document.querySelector('.newsletter__form');
+      const newsletterFeedback = document.querySelector('[data-newsletter-feedback]');
+      if (newsletterForm && newsletterFeedback) {
+        newsletterForm.addEventListener('submit', (event) => {
+          event.preventDefault();
+          if (!newsletterForm.checkValidity()) {
+            newsletterFeedback.textContent = 'Add a valid email to join the Nebula dispatch.';
+            newsletterFeedback.hidden = false;
+            newsletterFeedback.classList.remove('form-feedback--success');
+            newsletterFeedback.classList.add('form-feedback--error');
+            newsletterForm.reportValidity();
+            return;
+          }
+          const emailInput = newsletterForm.querySelector('input[type="email"]');
+          const email = emailInput ? emailInput.value.trim() : '';
+          newsletterFeedback.textContent = `Thanks! ${email} is now part of our weekly Nebula dispatch.`;
+          newsletterFeedback.hidden = false;
+          newsletterFeedback.classList.remove('form-feedback--error');
+          newsletterFeedback.classList.add('form-feedback--success');
+          newsletterForm.reset();
+          window.setTimeout(() => {
+            newsletterFeedback.hidden = true;
+          }, 6000);
+        });
+      }
+
+      const membershipForm = document.querySelector('.membership__form');
+      const membershipFeedback = document.querySelector('[data-membership-feedback]');
+      if (membershipForm && membershipFeedback) {
+        membershipForm.addEventListener('submit', (event) => {
+          event.preventDefault();
+          if (!membershipForm.checkValidity()) {
+            membershipFeedback.textContent = 'Please share your name, email, and preferred tier to continue.';
+            membershipFeedback.hidden = false;
+            membershipFeedback.classList.remove('form-feedback--success');
+            membershipFeedback.classList.add('form-feedback--error');
+            membershipForm.reportValidity();
+            return;
+          }
+          const nameInput = membershipForm.querySelector('#member-name');
+          const tierSelect = membershipForm.querySelector('#member-tier');
+          membershipFeedback.textContent = `Thanks ${nameInput?.value || ''}! A Nebula+ concierge will reach out about the ${(tierSelect?.selectedOptions?.[0]?.textContent || '').toLowerCase()} plan within 24 hours.`;
+          membershipFeedback.hidden = false;
+          membershipFeedback.classList.remove('form-feedback--error');
+          membershipFeedback.classList.add('form-feedback--success');
+          membershipForm.reset();
+          window.setTimeout(() => {
+            membershipFeedback.hidden = true;
+          }, 6000);
+        });
+      }
+
+      updateProducts();
+      updateCollections();
+      updateTestimonials();
+    </script>
+  </body>
+</html>
