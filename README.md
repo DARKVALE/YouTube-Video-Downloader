@@ -35,6 +35,11 @@ public/
 
 The legacy Python-based YouTube downloader is still available below.
 
+## 🗂 Branches
+
+- `work`: mainline branch containing the Nebula Commerce storefront demo.
+- `Eccommy`: sibling branch prepared for exploring alternative ecommerce designs or experiments without disturbing the primary demo.
+
 # Simple YouTube Downloader
 
 A user-friendly YouTube downloader with a graphical interface. Just paste a URL and download!
