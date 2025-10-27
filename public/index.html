@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Nebula Commerce is a next-generation ecommerce platform delivering curated products, concierge service, and immersive merchandising."
+    />
+    <title>Nebula Commerce · Elevate Every Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/components.css" />
+  </head>
+  <body>
+    <div class="page" id="top">
+      <a class="skip-link" href="#main">Skip to content</a>
+      <header class="site-header" aria-label="Global">
+        <div class="utility-bar" role="navigation" aria-label="Site utilities">
+          <div class="container utility-bar__inner">
+            <p class="utility-bar__promo">Complimentary global shipping over $150 · Extended returns all season</p>
+            <div class="utility-bar__actions">
+              <a class="utility-bar__link" href="./support.html#support">Support</a>
+              <a class="utility-bar__link" href="./support.html#order-tracking">Track order</a>
+              <div class="utility-language">
+                <button
+                  class="utility-bar__link utility-language__toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="language-menu"
+                  data-language-toggle
+                >
+                  EN / USD
+                </button>
+                <div id="language-menu" class="utility-language__menu" hidden data-language-menu>
+                  <button type="button" data-locale="en-us">English · USD</button>
+                  <button type="button" data-locale="fr-fr">Français · EUR</button>
+                  <button type="button" data-locale="ja-jp">日本語 · JPY</button>
+                </div>
+                <p class="language-feedback" role="status" aria-live="polite" data-language-feedback hidden></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="header-primary">
+            <button
+              class="header-primary__toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="primary-navigation"
+              data-nav-toggle
+            >
+              <span class="visually-hidden">Toggle navigation</span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <a class="logo" href="./index.html" aria-label="Nebula Commerce home">
+              Nebula <span>Commerce</span>
+            </a>
+            <form class="header-search" role="search" aria-label="Site search" data-search-form>
+              <label class="visually-hidden" for="search">Search products</label>
+              <input id="search" name="search" type="search" placeholder="Search for gear, creators, or collections" />
+              <button type="submit">Search</button>
+            </form>
+            <div class="header-icons" aria-label="Account shortcuts">
+              <a class="icon-button" href="./account.html#wishlist" aria-label="Open wishlist">
+                <span class="icon-heart" aria-hidden="true"></span>
+              </a>
+              <a class="icon-button" href="./account.html" aria-label="Open account">
+                <span class="icon-user" aria-hidden="true"></span>
+              </a>
+              <a class="icon-button" href="./cart.html" aria-label="View cart" data-cart-link>
+                <span class="icon-bag" aria-hidden="true"></span>
+                <span class="icon-badge" data-cart-count>0</span>
+              </a>
+            </div>
+            <p class="cart-feedback" role="status" aria-live="polite" data-cart-feedback hidden></p>
+          </div>
+        </div>
+
+        <nav id="primary-navigation" class="primary-nav" aria-label="Primary" data-nav>
+          <div class="container">
+            <ul class="primary-nav__list">
+              <li class="primary-nav__item">
+                <a class="primary-nav__link" href="./catalog.html?collection=new">New In</a>
+              </li>
+              <li class="primary-nav__item">
+                <a class="primary-nav__link" href="./catalog.html?category=women">Women</a>
+              </li>
+              <li class="primary-nav__item">
+                <a class="primary-nav__link" href="./catalog.html?category=men">Men</a>
+              </li>
+              <li class="primary-nav__item">
+                <a class="primary-nav__link" href="./catalog.html?category=tech">Tech</a>
+              </li>
+              <li class="primary-nav__item">
+                <a class="primary-nav__link" href="./catalog.html?collection=wellness">Wellness</a>
+              </li>
+              <li class="primary-nav__item">
+                <a class="primary-nav__link" href="./journal.html">Journal</a>
+              </li>
+              <li class="primary-nav__item">
+                <a class="primary-nav__link" href="./support.html">Support</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main id="main" class="site-main">
+        <section class="hero">
+          <div class="container hero__inner">
+            <div class="hero__copy">
+              <p class="tag">Nebula Flagship</p>
+              <h1>Commerce reimagined for creative retail leaders</h1>
+              <p>
+                Curate immersive product stories, orchestrate membership journeys, and deliver every parcel with predictive care.
+                Nebula Commerce blends artful merchandising with enterprise-grade tooling.
+              </p>
+              <div class="hero__actions">
+                <a class="button" href="./catalog.html">Shop the marketplace</a>
+                <a class="button button--ghost" href="./product.html?id=quantum-kit">Explore Quantum Kit</a>
+              </div>
+              <dl class="hero__stats" aria-label="Nebula Commerce metrics">
+                <div>
+                  <dt>2.3M+</dt>
+                  <dd>Orders fulfilled with near-zero delays</dd>
+                </div>
+                <div>
+                  <dt>98%</dt>
+                  <dd>Customer satisfaction across channels</dd>
+                </div>
+                <div>
+                  <dt>54</dt>
+                  <dd>Countries supported with concierge care</dd>
+                </div>
+              </dl>
+            </div>
+            <div class="hero__media" role="presentation">
+              <div class="device-frame">
+                <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1200&q=80" alt="Showcase of Nebula Commerce interface" />
+              </div>
+              <div class="hero__card">
+                <p class="hero__card-heading">Member-favorite bundles</p>
+                <p>Configure modular kits with live inventory and real-time loyalty incentives.</p>
+                <a class="inline-link" href="./catalog.html?collection=bundles">Build your bundle</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="featured">
+          <div class="container section__header">
+            <div>
+              <p class="tag">This week</p>
+              <h2>Featured marketplace drops</h2>
+            </div>
+            <a class="inline-link" href="./catalog.html?collection=featured">View all features</a>
+          </div>
+          <div class="container card-grid" data-featured-grid>
+            <!-- populated by JS -->
+          </div>
+        </section>
+
+        <section class="section section--alt" id="services">
+          <div class="container section__header">
+            <div>
+              <p class="tag">Everything in one platform</p>
+              <h2>Enterprise commerce capabilities</h2>
+            </div>
+            <a class="inline-link" href="./support.html#partnerships">Talk to partnerships</a>
+          </div>
+          <div class="container services-grid">
+            <article class="service-card">
+              <h3>Unified catalog &amp; inventory</h3>
+              <p>Merge digital and in-store assortments with a single source of truth updated in real time.</p>
+            </article>
+            <article class="service-card">
+              <h3>Membership intelligence</h3>
+              <p>Deliver bespoke perks with predictive loyalty scoring, advanced segmentation, and marketing automation.</p>
+            </article>
+            <article class="service-card">
+              <h3>Logistics command</h3>
+              <p>Balance carbon-conscious shipping with regional micro-fulfilment and dynamic routing options.</p>
+            </article>
+            <article class="service-card">
+              <h3>Creator marketplace</h3>
+              <p>Scale collaborations with protected revenue share, drop scheduling, and affiliate reporting.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="journal">
+          <div class="container section__header">
+            <div>
+              <p class="tag">Journal highlights</p>
+              <h2>Insights from the Nebula studio</h2>
+            </div>
+            <a class="inline-link" href="./journal.html">Read the journal</a>
+          </div>
+          <div class="container journal-grid">
+            <article class="journal-card">
+              <p class="tag">Operations</p>
+              <h3>How Nebula AI predicts next-quarter demand</h3>
+              <p>Leverage dynamic safety stock and always-on supply projections to protect your margins.</p>
+              <a class="inline-link" href="./journal.html#ai-demand">Understand the model</a>
+            </article>
+            <article class="journal-card">
+              <p class="tag">Experience</p>
+              <h3>Designing omnichannel merchandising moments</h3>
+              <p>Move beyond PDPs with contextual bundles, live try-ons, and meaningful post-purchase rituals.</p>
+              <a class="inline-link" href="./journal.html#merchandising">See playbook</a>
+            </article>
+            <article class="journal-card">
+              <p class="tag">Community</p>
+              <h3>Creators leading the Nebula Collective</h3>
+              <p>Meet the artists curating our latest immersive collection of wearable tech.</p>
+              <a class="inline-link" href="./journal.html#collective">Meet the Collective</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--alt" id="newsletter">
+          <div class="container newsletter">
+            <div class="newsletter__copy">
+              <p class="tag">Stay in the loop</p>
+              <h2>Get Nebula Dispatches every Friday</h2>
+              <p>Stories, trends, and early access to drops—all curated for modern commerce leaders.</p>
+            </div>
+            <form class="newsletter__form" data-newsletter-form>
+              <label class="visually-hidden" for="newsletter-email">Email address</label>
+              <input id="newsletter-email" name="email" type="email" placeholder="Email address" required />
+              <button type="submit">Subscribe</button>
+              <p class="form-feedback" role="status" aria-live="polite" data-newsletter-feedback hidden></p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" aria-label="Footer">
+        <div class="container footer__grid">
+          <div>
+            <a class="logo logo--footer" href="./index.html">Nebula <span>Commerce</span></a>
+            <p class="footer__tagline">Modern commerce infrastructure for creative retailers.</p>
+            <ul class="footer__social" aria-label="Social">
+              <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+              <li><a href="https://www.tiktok.com" target="_blank" rel="noreferrer">TikTok</a></li>
+              <li><a href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Platform</h3>
+            <ul>
+              <li><a href="./catalog.html">Marketplace</a></li>
+              <li><a href="./journal.html">Journal</a></li>
+              <li><a href="./support.html#integrations">Integrations</a></li>
+              <li><a href="./support.html#pricing">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li><a href="./journal.html#about">About Nebula</a></li>
+              <li><a href="./support.html#careers">Careers</a></li>
+              <li><a href="./support.html#press">Press</a></li>
+              <li><a href="./support.html#partners">Partners</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Help</h3>
+            <ul>
+              <li><a href="./support.html#support">Customer support</a></li>
+              <li><a href="./support.html#order-tracking">Track order</a></li>
+              <li><a href="./support.html#returns">Returns &amp; exchanges</a></li>
+              <li><a href="./support.html#accessibility">Accessibility</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container footer__legal">
+          <p>© <span data-year></span> Nebula Commerce. All rights reserved.</p>
+          <div class="footer__policies">
+            <a href="./support.html#privacy">Privacy</a>
+            <a href="./support.html#terms">Terms</a>
+            <a href="./support.html#cookies">Cookies</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="./assets/js/app.js"></script>
+    <script type="module" src="./assets/js/home.js"></script>
+  </body>
+</html>

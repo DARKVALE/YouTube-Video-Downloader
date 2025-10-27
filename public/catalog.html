@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Browse Nebula Commerce products with dynamic filters, collections, and merchandising moments." />
+    <title>Nebula Commerce · Marketplace</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/components.css" />
+  </head>
+  <body>
+    <div class="page">
+      <a class="skip-link" href="#main">Skip to content</a>
+      <header class="site-header" aria-label="Global">
+        <div class="utility-bar" role="navigation" aria-label="Site utilities">
+          <div class="container utility-bar__inner">
+            <p class="utility-bar__promo">Complimentary global shipping over $150 · Extended returns all season</p>
+            <div class="utility-bar__actions">
+              <a class="utility-bar__link" href="./support.html#support">Support</a>
+              <a class="utility-bar__link" href="./support.html#order-tracking">Track order</a>
+              <div class="utility-language">
+                <button
+                  class="utility-bar__link utility-language__toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="language-menu"
+                  data-language-toggle
+                >
+                  EN / USD
+                </button>
+                <div id="language-menu" class="utility-language__menu" hidden data-language-menu>
+                  <button type="button" data-locale="en-us">English · USD</button>
+                  <button type="button" data-locale="fr-fr">Français · EUR</button>
+                  <button type="button" data-locale="ja-jp">日本語 · JPY</button>
+                </div>
+                <p class="language-feedback" role="status" aria-live="polite" data-language-feedback hidden></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="header-primary">
+            <button
+              class="header-primary__toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="primary-navigation"
+              data-nav-toggle
+            >
+              <span class="visually-hidden">Toggle navigation</span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <a class="logo" href="./index.html" aria-label="Nebula Commerce home">
+              Nebula <span>Commerce</span>
+            </a>
+            <form class="header-search" role="search" aria-label="Site search" data-search-form>
+              <label class="visually-hidden" for="catalog-search">Search products</label>
+              <input id="catalog-search" name="search" type="search" placeholder="Search for gear, creators, or collections" />
+              <button type="submit">Search</button>
+            </form>
+            <div class="header-icons" aria-label="Account shortcuts">
+              <a class="icon-button" href="./account.html#wishlist" aria-label="Open wishlist">
+                <span class="icon-heart" aria-hidden="true"></span>
+              </a>
+              <a class="icon-button" href="./account.html" aria-label="Open account">
+                <span class="icon-user" aria-hidden="true"></span>
+              </a>
+              <a class="icon-button" href="./cart.html" aria-label="View cart" data-cart-link>
+                <span class="icon-bag" aria-hidden="true"></span>
+                <span class="icon-badge" data-cart-count>0</span>
+              </a>
+            </div>
+            <p class="cart-feedback" role="status" aria-live="polite" data-cart-feedback hidden></p>
+          </div>
+        </div>
+
+        <nav id="primary-navigation" class="primary-nav" aria-label="Primary" data-nav>
+          <div class="container">
+            <ul class="primary-nav__list">
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?collection=new">New In</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?category=women">Women</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?category=men">Men</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?category=tech">Tech</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?collection=wellness">Wellness</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./journal.html">Journal</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./support.html">Support</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main id="main" class="site-main">
+        <header class="page-header">
+          <div class="container page-header__inner">
+            <div>
+              <p class="tag">Marketplace</p>
+              <h1>Discover the Nebula assortment</h1>
+              <p>Use guided filters to surface curated drops, creator collaborations, and modular kits.</p>
+            </div>
+            <div class="page-header__actions">
+              <a class="button" href="./product.html?id=quantum-kit">Shop Quantum Kit</a>
+              <a class="button button--ghost" href="./support.html#concierge">Book a concierge</a>
+            </div>
+          </div>
+        </header>
+
+        <section class="section" aria-label="Catalog controls">
+          <div class="container catalog-controls">
+            <button class="button button--ghost" type="button" data-filter-toggle aria-expanded="false" aria-controls="catalog-filters">
+              Filters
+            </button>
+            <div class="catalog-sort">
+              <label for="sort">Sort by</label>
+              <select id="sort" data-sort>
+                <option value="recommended">Recommended</option>
+                <option value="newest">Newest</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+              </select>
+            </div>
+            <div class="catalog-view">
+              <button type="button" class="catalog-view__button is-active" data-view="grid" aria-label="Grid view"></button>
+              <button type="button" class="catalog-view__button" data-view="list" aria-label="List view"></button>
+            </div>
+          </div>
+          <aside id="catalog-filters" class="catalog-filters" hidden data-filters>
+            <form class="filters" data-filter-form>
+              <fieldset>
+                <legend>Categories</legend>
+                <label><input type="checkbox" name="category" value="women" /> Women</label>
+                <label><input type="checkbox" name="category" value="men" /> Men</label>
+                <label><input type="checkbox" name="category" value="tech" /> Tech</label>
+                <label><input type="checkbox" name="category" value="wellness" /> Wellness</label>
+              </fieldset>
+              <fieldset>
+                <legend>Collections</legend>
+                <label><input type="checkbox" name="collection" value="featured" /> Featured</label>
+                <label><input type="checkbox" name="collection" value="bundles" /> Bundles</label>
+                <label><input type="checkbox" name="collection" value="new" /> New arrivals</label>
+                <label><input type="checkbox" name="collection" value="creator" /> Creator collabs</label>
+              </fieldset>
+              <fieldset>
+                <legend>Price</legend>
+                <label><input type="radio" name="price" value="all" checked /> All</label>
+                <label><input type="radio" name="price" value="0-100" /> Under $100</label>
+                <label><input type="radio" name="price" value="100-300" /> $100 - $300</label>
+                <label><input type="radio" name="price" value="300-600" /> $300 - $600</label>
+                <label><input type="radio" name="price" value="600+" /> $600+</label>
+              </fieldset>
+              <button class="button" type="submit">Apply filters</button>
+              <button class="button button--ghost" type="reset" data-reset-filters>Reset</button>
+            </form>
+          </aside>
+        </section>
+
+        <section class="section" aria-label="Catalog results">
+          <div class="container catalog-results">
+            <div class="catalog-summary">
+              <p><span data-results-count>0</span> results</p>
+              <p class="catalog-summary__active" data-active-filters></p>
+            </div>
+            <div class="product-grid" data-product-grid>
+              <!-- Populated by JS -->
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" aria-label="Footer">
+        <div class="container footer__grid">
+          <div>
+            <a class="logo logo--footer" href="./index.html">Nebula <span>Commerce</span></a>
+            <p class="footer__tagline">Modern commerce infrastructure for creative retailers.</p>
+            <ul class="footer__social" aria-label="Social">
+              <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+              <li><a href="https://www.tiktok.com" target="_blank" rel="noreferrer">TikTok</a></li>
+              <li><a href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Platform</h3>
+            <ul>
+              <li><a href="./catalog.html">Marketplace</a></li>
+              <li><a href="./journal.html">Journal</a></li>
+              <li><a href="./support.html#integrations">Integrations</a></li>
+              <li><a href="./support.html#pricing">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li><a href="./journal.html#about">About Nebula</a></li>
+              <li><a href="./support.html#careers">Careers</a></li>
+              <li><a href="./support.html#press">Press</a></li>
+              <li><a href="./support.html#partners">Partners</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Help</h3>
+            <ul>
+              <li><a href="./support.html#support">Customer support</a></li>
+              <li><a href="./support.html#order-tracking">Track order</a></li>
+              <li><a href="./support.html#returns">Returns &amp; exchanges</a></li>
+              <li><a href="./support.html#accessibility">Accessibility</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container footer__legal">
+          <p>© <span data-year></span> Nebula Commerce. All rights reserved.</p>
+          <div class="footer__policies">
+            <a href="./support.html#privacy">Privacy</a>
+            <a href="./support.html#terms">Terms</a>
+            <a href="./support.html#cookies">Cookies</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="./assets/js/app.js"></script>
+    <script type="module" src="./assets/js/catalog.js"></script>
+  </body>
+</html>

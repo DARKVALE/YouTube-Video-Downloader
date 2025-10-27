@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Get help from Nebula Commerce support, access order tracking, returns, partnerships, and accessibility resources." />
+    <title>Nebula Commerce · Support</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/components.css" />
+  </head>
+  <body>
+    <div class="page">
+      <a class="skip-link" href="#main">Skip to content</a>
+      <header class="site-header" aria-label="Global">
+        <div class="utility-bar" role="navigation" aria-label="Site utilities">
+          <div class="container utility-bar__inner">
+            <p class="utility-bar__promo">Complimentary global shipping over $150 · Extended returns all season</p>
+            <div class="utility-bar__actions">
+              <a class="utility-bar__link" href="./support.html#support">Support</a>
+              <a class="utility-bar__link" href="./support.html#order-tracking">Track order</a>
+              <div class="utility-language">
+                <button
+                  class="utility-bar__link utility-language__toggle"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="language-menu"
+                  data-language-toggle
+                >
+                  EN / USD
+                </button>
+                <div id="language-menu" class="utility-language__menu" hidden data-language-menu>
+                  <button type="button" data-locale="en-us">English · USD</button>
+                  <button type="button" data-locale="fr-fr">Français · EUR</button>
+                  <button type="button" data-locale="ja-jp">日本語 · JPY</button>
+                </div>
+                <p class="language-feedback" role="status" aria-live="polite" data-language-feedback hidden></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="header-primary">
+            <button
+              class="header-primary__toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="primary-navigation"
+              data-nav-toggle
+            >
+              <span class="visually-hidden">Toggle navigation</span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+            <a class="logo" href="./index.html" aria-label="Nebula Commerce home">
+              Nebula <span>Commerce</span>
+            </a>
+            <form class="header-search" role="search" aria-label="Site search" data-search-form>
+              <label class="visually-hidden" for="support-search">Search products</label>
+              <input id="support-search" name="search" type="search" placeholder="Search for gear, creators, or collections" />
+              <button type="submit">Search</button>
+            </form>
+            <div class="header-icons" aria-label="Account shortcuts">
+              <a class="icon-button" href="./account.html#wishlist" aria-label="Open wishlist">
+                <span class="icon-heart" aria-hidden="true"></span>
+              </a>
+              <a class="icon-button" href="./account.html" aria-label="Open account">
+                <span class="icon-user" aria-hidden="true"></span>
+              </a>
+              <a class="icon-button" href="./cart.html" aria-label="View cart" data-cart-link>
+                <span class="icon-bag" aria-hidden="true"></span>
+                <span class="icon-badge" data-cart-count>0</span>
+              </a>
+            </div>
+            <p class="cart-feedback" role="status" aria-live="polite" data-cart-feedback hidden></p>
+          </div>
+        </div>
+
+        <nav id="primary-navigation" class="primary-nav" aria-label="Primary" data-nav>
+          <div class="container">
+            <ul class="primary-nav__list">
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?collection=new">New In</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?category=women">Women</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?category=men">Men</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?category=tech">Tech</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./catalog.html?collection=wellness">Wellness</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./journal.html">Journal</a></li>
+              <li class="primary-nav__item"><a class="primary-nav__link" href="./support.html">Support</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main id="main" class="site-main">
+        <header class="page-header">
+          <div class="container page-header__inner">
+            <div>
+              <p class="tag">Support</p>
+              <h1>Your concierge team, always-on</h1>
+              <p>Reach our specialists, track orders, handle returns, or expand your partnership with Nebula Commerce.</p>
+            </div>
+            <div class="page-header__actions">
+              <a class="button" href="#support">Contact support</a>
+              <a class="button button--ghost" href="#order-tracking">Track an order</a>
+            </div>
+          </div>
+        </header>
+
+        <section class="section support-grid" id="support">
+          <div class="container support-grid__inner">
+            <div class="support-card">
+              <h2>Customer care</h2>
+              <p>Need help with an order or return? Our care team is on standby 24/7 across chat, phone, and email.</p>
+              <form class="support-form" data-support-form>
+                <div class="field">
+                  <label for="support-name">Name</label>
+                  <input id="support-name" name="name" type="text" required />
+                </div>
+                <div class="field">
+                  <label for="support-email">Email</label>
+                  <input id="support-email" name="email" type="email" required />
+                </div>
+                <div class="field">
+                  <label for="support-message">How can we help?</label>
+                  <textarea id="support-message" name="message" rows="4" required></textarea>
+                </div>
+                <button class="button" type="submit">Submit</button>
+                <p class="form-feedback" role="status" aria-live="polite" data-support-feedback hidden></p>
+              </form>
+            </div>
+            <div class="support-card">
+              <h2>Membership concierge</h2>
+              <p>Unlock elevated loyalty, corporate gifting, and co-branded experiences with the Concierge Collective.</p>
+              <form class="support-form" id="concierge" data-concierge-form>
+                <div class="field">
+                  <label for="concierge-company">Company</label>
+                  <input id="concierge-company" name="company" type="text" required />
+                </div>
+                <div class="field">
+                  <label for="concierge-size">Team size</label>
+                  <select id="concierge-size" name="team_size" required>
+                    <option value="" disabled selected>Select a range</option>
+                    <option value="1-10">1-10</option>
+                    <option value="11-50">11-50</option>
+                    <option value="51-200">51-200</option>
+                    <option value="200+">200+</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="concierge-notes">What should we prepare?</label>
+                  <textarea id="concierge-notes" name="notes" rows="4" required></textarea>
+                </div>
+                <button class="button" type="submit">Request consultation</button>
+                <p class="form-feedback" role="status" aria-live="polite" data-concierge-feedback hidden></p>
+              </form>
+            </div>
+          </div>
+        </section>
+
+        <section class="section section--alt" id="order-tracking">
+          <div class="container order-tracking">
+            <div>
+              <p class="tag">Order tracking</p>
+              <h2>Real-time parcel insights</h2>
+              <p>Check the status of any purchase with your order number and contact email.</p>
+              <form class="support-form" data-tracking-form>
+                <div class="field">
+                  <label for="tracking-order">Order number</label>
+                  <input id="tracking-order" name="order" type="text" required pattern="NB-[0-9]{6}" />
+                </div>
+                <div class="field">
+                  <label for="tracking-email">Email</label>
+                  <input id="tracking-email" name="email" type="email" required />
+                </div>
+                <button class="button" type="submit">Find order</button>
+                <p class="form-feedback" role="status" aria-live="polite" data-tracking-feedback hidden></p>
+              </form>
+            </div>
+            <div class="tracking-status" data-tracking-status>
+              <p class="tag">Live status</p>
+              <p class="tracking-status__state">Awaiting lookup</p>
+              <ul class="tracking-status__events" data-tracking-events>
+                <li>Submit your order details to populate events.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="returns">
+          <div class="container section__header">
+            <div>
+              <p class="tag">Policy highlights</p>
+              <h2>Returns, accessibility &amp; compliance</h2>
+            </div>
+            <a class="inline-link" href="#privacy">View legal hub</a>
+          </div>
+          <div class="container policy-grid">
+            <article class="policy-card" id="returns">
+              <h3>Returns &amp; exchanges</h3>
+              <p>Initiate returns within 60 days. Items ship with prepaid, trackable labels.</p>
+              <a class="inline-link" href="#support">Start a return</a>
+            </article>
+            <article class="policy-card" id="accessibility">
+              <h3>Accessibility</h3>
+              <p>We design every experience to meet WCAG 2.2 AA and welcome your feedback.</p>
+              <a class="inline-link" href="#support">Share accessibility feedback</a>
+            </article>
+            <article class="policy-card" id="privacy">
+              <h3>Privacy &amp; data</h3>
+              <p>Your data is encrypted at rest and in transit. We never sell customer information.</p>
+              <a class="inline-link" href="#terms">Read our privacy promise</a>
+            </article>
+            <article class="policy-card" id="terms">
+              <h3>Terms &amp; service</h3>
+              <p>Transparent terms written for humans. Updated quarterly with change logs.</p>
+              <a class="inline-link" href="#cookies">View the latest</a>
+            </article>
+            <article class="policy-card" id="cookies">
+              <h3>Cookies &amp; preferences</h3>
+              <p>Control analytics, personalization, and advertising toggles with a single click.</p>
+              <a class="inline-link" href="#support">Open preferences</a>
+            </article>
+            <article class="policy-card" id="partners">
+              <h3>Partners &amp; integrations</h3>
+              <p>Connect Nebula Commerce with ERP, CRM, and fulfilment partners in minutes.</p>
+              <a class="inline-link" href="#integrations">Explore integrations</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--alt" id="integrations">
+          <div class="container section__header">
+            <div>
+              <p class="tag">Integrations</p>
+              <h2>Connect your stack</h2>
+            </div>
+            <a class="inline-link" href="#careers">Join the platform team</a>
+          </div>
+          <div class="container integrations">
+            <article class="integration-card">
+              <h3>ERP &amp; OMS</h3>
+              <p>Sync inventory and orders with SAP, Netsuite, and custom OMS connectors.</p>
+            </article>
+            <article class="integration-card">
+              <h3>Marketing automation</h3>
+              <p>Send orchestrated journeys via Braze, Klaviyo, and Salesforce Marketing Cloud.</p>
+            </article>
+            <article class="integration-card">
+              <h3>Fulfilment &amp; logistics</h3>
+              <p>Integrate ShipBob, Flexport, and DHL Express with carbon impact tracking.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="careers">
+          <div class="container careers">
+            <div>
+              <p class="tag">Careers</p>
+              <h2>Join the Nebula team</h2>
+              <p>We’re hiring engineers, designers, and strategists who believe retail can be reimagined.</p>
+            </div>
+            <ul class="careers__list">
+              <li><a href="#careers">Director of Marketplace Operations</a></li>
+              <li><a href="#careers">Principal Product Designer</a></li>
+              <li><a href="#careers">Senior Software Engineer · Commerce</a></li>
+              <li><a href="#careers">Head of Partnerships &amp; Alliances</a></li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer" aria-label="Footer">
+        <div class="container footer__grid">
+          <div>
+            <a class="logo logo--footer" href="./index.html">Nebula <span>Commerce</span></a>
+            <p class="footer__tagline">Modern commerce infrastructure for creative retailers.</p>
+            <ul class="footer__social" aria-label="Social">
+              <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer">Instagram</a></li>
+              <li><a href="https://www.tiktok.com" target="_blank" rel="noreferrer">TikTok</a></li>
+              <li><a href="https://www.youtube.com" target="_blank" rel="noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Platform</h3>
+            <ul>
+              <li><a href="./catalog.html">Marketplace</a></li>
+              <li><a href="./journal.html">Journal</a></li>
+              <li><a href="./support.html#integrations">Integrations</a></li>
+              <li><a href="./support.html#pricing">Pricing</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Company</h3>
+            <ul>
+              <li><a href="./journal.html#about">About Nebula</a></li>
+              <li><a href="./support.html#careers">Careers</a></li>
+              <li><a href="./support.html#press">Press</a></li>
+              <li><a href="./support.html#partners">Partners</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Help</h3>
+            <ul>
+              <li><a href="./support.html#support">Customer support</a></li>
+              <li><a href="./support.html#order-tracking">Track order</a></li>
+              <li><a href="./support.html#returns">Returns &amp; exchanges</a></li>
+              <li><a href="./support.html#accessibility">Accessibility</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="container footer__legal">
+          <p>© <span data-year></span> Nebula Commerce. All rights reserved.</p>
+          <div class="footer__policies">
+            <a href="./support.html#privacy">Privacy</a>
+            <a href="./support.html#terms">Terms</a>
+            <a href="./support.html#cookies">Cookies</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="./assets/js/app.js"></script>
+    <script type="module" src="./assets/js/support.js"></script>
+  </body>
+</html>
